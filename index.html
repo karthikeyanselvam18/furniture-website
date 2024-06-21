@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="stylesheet" href="css/popular-products.css" />
+    <link rel="stylesheet" href="css/bestfurniture.css" />
+    <link rel="stylesheet" href="css/pros-container.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="main-container" id="main-container">
+      <header>
+        <div class="logo">
+          <span>F</span>
+          <span>U</span>
+          <span>R</span>
+          <span>N</span>
+        </div>
+        <label for="navbar-check" class="navbar-check"
+          ><span class="material-symbols-outlined"> menu </span></label
+        >
+        <input type="checkbox" name="navbar-check" id="navbar-check" />
+        <div class="navbar">
+          <ul class="menu">
+            <li>
+              <span class="hover-text">Home</span>
+            </li>
+            <li>
+              <span class="hover-text">Product</span>
+            </li>
+            <li>
+              <span class="hover-text">About</span>
+            </li>
+            <li class="dropdown">
+              <span class="hover-text">Page</span>
+              <div class="dropdown-content">
+                <span class="hover-text">Login</span>
+                <span class="hover-text">Card</span>
+                <span class="hover-text">Categories</span>
+                <span class="hover-text">Checkout</span>
+                <span class="hover-text">Product Details</span>
+              </div>
+            </li>
+            <li class="dropdown">
+              <span class="hover-text">Blog</span>
+              <div class="dropdown-content">
+                <span class="hover-text">Blog</span>
+                <span class="hover-text">Blog details</span>
+                <span class="hover-text">Elements</span>
+              </div>
+            </li>
+            <li>
+              <span class="hover-text">Contact</span>
+            </li>
+          </ul>
+          <div class="user-container">
+            <div class="search-container">
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Search products"
+              />
+              <span class="material-symbols-outlined search-icon">
+                search
+              </span>
+            </div>
+            <span class="hover-text user-account">My Account</span>
+            <div class="bag">
+              <span class="material-symbols-outlined bag-icon">
+                shopping_bag
+              </span>
+              <span class="count">0</span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="home-section">
+          <div class="banner">
+            <span class="discount-text">70% SALE OFF</span>
+            <span class="banner-title">FURNITURE AT COST</span>
+            <span class="banner-context">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              nulla consequatur saepe, dolores excepturi nam inventore! Numquam
+              doloribus magnam odio nemo accusamus beatae dicta, aliquam
+              assumenda, eveniet quos omnis possimus!
+            </span>
+            <button class="banner-button">DISCOVER MORE</button>
+          </div>
+        </section>
+        <section class="popular-products">
+          <div class="popular-products-title">POPULAR PRODUCTS</div>
+          <div class="popular-products-context">
+            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi
+            quis viverra ornare, eros dolor interdum nulla.
+          </div>
+          <div class="popular-products-category">
+            <input type="radio" name="category" id="sofa" checked />
+            <label for="sofa">Sofa</label>
+            <input type="radio" name="category" id="table" />
+            <label for="table">Table</label>
+            <input type="radio" name="category" id="chair" />
+            <label for="chair">Chair</label>
+            <input type="radio" name="category" id="bed" />
+            <label for="bed">Bed</label>
+            <input type="radio" name="category" id="lightning" />
+            <label for="lightning">Lightning</label>
+          </div>
+          <div class="popular-products-container">
+            <div class="popular-product">
+              <img
+                src="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular1.png.webp"
+                alt=""
+              />
+              <span class="name"
+                >Bly Microfiber / Microsuede 56" Armless Loveseat</span
+              >
+              <span class="price">$367</span>
+            </div>
+            <div class="popular-product">
+              <img
+                src="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular2.png"
+                alt=""
+              />
+              <span class="name"
+                >Bly Microfiber / Microsuede 56" Armless Loveseat</span
+              >
+              <span class="price">$367</span>
+            </div>
+            <div class="popular-product">
+              <img
+                src="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular3.png"
+                alt=""
+              />
+              <span class="name"
+                >Bly Microfiber / Microsuede 56" Armless Loveseat</span
+              >
+              <span class="price">$367</span>
+            </div>
+          </div>
+        </section>
+        <section class="best-furniture-container">
+          <div class="image-container">
+            <img
+              src="https://images.unsplash.com/photo-1547166812-0fca6370dc03?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div class="best-furniture-content">
+            <span class="title">BEST FURNITURE MANUFACTURER</span>
+            <span class="context">
+              Suspendisse varius enim in eros elementum tristique. Duis cursus,
+              mi quis viverra ornare, eros dolor interdum nulla. Suspendisse
+              varius enim in eros elementum tristique. Duis cursus, mi quis
+              viverra ornare, eros dolor interdum nulla.
+            </span>
+            <button class="best-furniture-button">DISCOVER MORE</button>
+          </div>
+        </section>
+        <section class="popular-products">
+          <div class="popular-products-title">POPULAR PRODUCTS</div>
+          <div class="popular-products-context">
+            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi
+            quis viverra ornare, eros dolor interdum nulla.
+          </div>
+          <div class="popular-products-container">
+            <div class="popular-product">
+              <img
+                src="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular4.png"
+                alt=""
+              />
+              <span class="name"
+                >Bly Microfiber / Microsuede 56" Armless Loveseat</span
+              >
+              <span class="price">$367</span>
+            </div>
+            <div class="popular-product">
+              <img
+                src="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular5.png"
+                alt=""
+              />
+              <span class="name"
+                >Bly Microfiber / Microsuede 56" Armless Loveseat</span
+              >
+              <span class="price">$367</span>
+            </div>
+            <div class="popular-product">
+              <img
+                src="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular6.png"
+                alt=""
+              />
+              <span class="name"
+                >Bly Microfiber / Microsuede 56" Armless Loveseat</span
+              >
+              <span class="price">$367</span>
+            </div>
+          </div>
+          <button class="button3">DISCOVER MORE</button>
+        </section>
+        <section class="pros-container">
+          <div class="pros">
+            <span class="icon material-symbols-outlined"> local_shipping </span>
+            <span class="title">Fast & Free Delivery</span>
+            <span class="context">Free delivery on all orders</span>
+          </div>
+          <div class="pros">
+            <span class="icon material-symbols-outlined"> encrypted </span>
+            <span class="title">Secure Payment</span>
+            <span class="context">Free delivery on all orders</span>
+          </div>
+          <div class="pros">
+            <span class="icon material-symbols-outlined">
+              currency_exchange
+            </span>
+            <span class="title">Money Back Guarantee</span>
+            <span class="context">Free delivery on all orders</span>
+          </div>
+          <div class="pros">
+            <span class="icon material-symbols-outlined">
+              local_convenience_store
+            </span>
+            <span class="title">Online Support</span>
+            <span class="context">Free delivery on all orders</span>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-row">
+          <div class="col1">
+            <div class="logo">
+              <span>F</span>
+              <span>U</span>
+              <span>R</span>
+              <span>N</span>
+            </div>
+            <span
+              >Suspendisse varius enim in eros elementum tristique. Duis cursus,
+              mi quis viverra ornare, eros dolor interdum nulla.</span
+            >
+            <div class="socials">
+              <i class="fa-brands fa-x-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="col2">
+            <div class="list">
+              <span>Quick links</span>
+              <ul>
+                <li>Image Licensing</li>
+                <li>Style Guide</li>
+                <li>Privacy Policy</li>
+              </ul>
+            </div>
+            <div class="list">
+              <span>Quick links</span>
+              <ul>
+                <li>Image Licensing</li>
+                <li>Style Guide</li>
+                <li>Privacy Policy</li>
+              </ul>
+            </div>
+            <div class="list">
+              <span>Quick links</span>
+              <ul>
+                <li>Image Licensing</li>
+                <li>Style Guide</li>
+                <li>Privacy Policy</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-message">
+          Copyright ©2024 All rights reserved | This template is made
+          with&nbsp;<i class="fa-solid fa-heart" style="color: #fd8f5f"></i
+          >&nbsp;by&nbsp;
+          <a
+            href="https://ks18-portfolio.netlify.app/"
+            target="_blank"
+            style="color: #fd8f5f"
+            >Karthikeyan Selvam</a
+          >
+        </div>
+      </footer>
+    </div>
+    <a href="#main-container" class="back-to-top-button">
+      <span class="material-symbols-outlined"> arrow_upward </span>
+    </a>
+  </body>
+</html>

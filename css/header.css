@@ -1,0 +1,217 @@
+header {
+  background-color: #f2e1d9;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 100px;
+}
+.logo {
+  display: grid;
+  width: 75px;
+  height: 75px;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  padding: 10px;
+  border: 2px solid #fd8f5f;
+  color: #fd8f5f;
+  font-weight: bold;
+}
+.hover-text {
+  transition: color 0.25s;
+}
+.hover-text:hover {
+  color: #fd8f5f;
+}
+.menu {
+  list-style: none;
+  display: flex;
+}
+.menu li {
+  padding: 10px;
+}
+.menu li,
+.user-account {
+  font-weight: 500;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: -10px;
+  background-color: white;
+  padding: 20px;
+  color: black;
+  border-top: 3px solid #fd8f5f;
+  padding-top: 18px;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.356);
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: opacity 0.25s, transform 0.25s;
+}
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.dropdown .dropdown-content::after {
+  position: absolute;
+  content: "";
+  background-color: transparent;
+  top: -7px;
+  left: 25px;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #fd8f5f;
+}
+.dropdown-content span {
+  text-wrap: nowrap;
+}
+.user-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.search-container::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 1px;
+  bottom: -10px;
+  left: 0;
+}
+.search-input {
+  border: none;
+  background: none;
+  font-size: 0.9rem;
+  padding-inline: 5px 30px;
+  outline: none;
+}
+.search-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+}
+.bag {
+  position: relative;
+}
+.bag-icon {
+  font-size: 2rem;
+}
+.count {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  background-color: #fd8f5f;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+label.navbar-check {
+  display: none;
+}
+
+label.navbar-check span {
+  font-size: 2rem;
+}
+input#navbar-check {
+  display: none;
+}
+@media (max-width: 700px) {
+  label.navbar-check {
+    display: block;
+  }
+  header {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #f2e1d9;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+  }
+  #navbar-check:checked + .navbar {
+    transform: scaleY(1);
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    align-items: start;
+  }
+  .dropdown-content {
+    top: 0;
+    left: 100px;
+    border: none;
+    border-left: 3px solid #fd8f5f;
+    transform: translateX(-5px);
+    z-index: 3000;
+  }
+  .dropdown:hover .dropdown-content {
+    transform: translateX(0px);
+  }
+  .dropdown .dropdown-content::after {
+    top: 15px;
+    left: -17px;
+    border-right: 7px solid #fd8f5f;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+  }
+  .user-container {
+    gap: 10px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 15px;
+  }
+  .search-container {
+    width: initial;
+  }
+  .search-input {
+    border: none;
+    background: none;
+    font-size: 0.9rem;
+    outline: none;
+    width: 100%;
+  }
+  .search-container::after {
+    display: none;
+  }
+  .user-account {
+    font-size: 0.7rem;
+    text-wrap: nowrap;
+  }
+}

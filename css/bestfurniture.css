@@ -1,0 +1,104 @@
+
+.best-furniture-container {
+    display: flex;
+    height: 500px;
+    background-color: #e6e8f0;
+  }
+  .best-furniture-container .image-container {
+    width: 50%;
+    overflow: hidden;
+  }
+  .best-furniture-container .image-container img {
+    height: 100%;
+    width: auto;
+  }
+  .best-furniture-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+  }
+  .best-furniture-content .title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .best-furniture-button,
+  button {
+    align-self: start;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #fd8f5f;
+    color: white;
+    padding: 15px 30px;
+    margin-top: 20px;
+    position: relative;
+  }
+  .best-furniture-button::after,
+  button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.212);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.45s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  }
+  .best-furniture-button:hover:after {
+    transform: scaleX(1);
+  }
+  .button3 {
+    align-self: center;
+    border: 1px solid #fd8f5f;
+    color: #fd8f5f;
+    background-color: transparent;
+    transition: transform 0.45s cubic-bezier(0.5, 1.6, 0.4, 0.7),
+      color 0.45s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  }
+  .button3::after {
+    transform: scaleY(0) scaleX(1);
+    transform-origin: top;
+    background-color: #fd8f5f;
+    z-index: -10;
+  }
+  .button3:hover {
+    color: white;
+  }
+  .button3:hover::after {
+    transform: scaleY(1) scaleX(1);
+  }
+  
+  @media (max-width: 700px) {
+    .best-furniture-container {
+      flex-direction: column;
+      height: initial;
+      background-color: #e6e8f0;
+    }
+    .best-furniture-container .image-container {
+      width: 100%;
+    }
+    .best-furniture-container .image-container img {
+      height: auto;
+      width: 100%;
+    }
+    .best-furniture-content {
+      width: 100%;
+      gap: 0px;
+      padding: 10px 20px;
+    }
+    .best-furniture-content .title {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .best-furniture-button {
+      align-self: center;
+      font-size: 1rem;
+      padding: 15px 20px;
+      margin-bottom: 5px;
+    }
+  }
+  
